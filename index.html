@@ -4,8 +4,20 @@
     <title>For Learnign Git</title>
   </head>
   <body>
-    <button style="background-color: red;
+    <button onclick="background()" style="background-color: red;
     color:white">Red</button>
   </body>
+  <script>
+    var isRed = true;
+    function background(){
+      if(isRed){
+        document.body.style.backgroundColor = 'red';
+      }
+      else {
+        document.body.style.backgroundColor = 'white';
+      }
+      isRed = !isRed;
+    }
+  </script>
 
 </html>
